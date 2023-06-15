@@ -1,0 +1,14 @@
+# 具体键值含义，参考 logtube.properties 文件
+logtube:
+  project: test-project
+  env: test
+  topics:
+    root: ALL,-debug,-trace
+  topic-mappings: trace=debug, error=err, warn=info
+
+  console:
+    pretty: true
+
+  filter:
+    redis-min-duration: 100
+    redis-min-result-size: 1000
